@@ -9,7 +9,7 @@ function reverseArray(arr) {
   for (let i = arr.length - 1; i >= 0; i--) {
     reversedArr.push(arr[i]);
   }
-  return arr;
+  return reversedArr;
 }
 
 let numArr = [2, 4, 8, 10, 60, 70, 80, 99];
@@ -54,7 +54,7 @@ function palindrome(string) {
   let rightIndex = string.length - 1;
 
   while (leftIndex < rightIndex) {
-    if (string[leftIndex] !== stromg[rightIndex]) {
+    if (string[leftIndex] !== string[rightIndex]) {
       return false;
     }
     leftIndex++;
